@@ -1,0 +1,5 @@
+https://www.cnblogs.com/okokabcd/p/8792909.html
+我们可以使用H2-console来查看H2数据库，访问如下地址
+http://localhost:8088/h2-console ， 选择如下数据库，
+输入JDBC URL：jdbc:h2:file:./DB，
+这是上文配置的，不用输入密码，直接点击Connect就可以了。

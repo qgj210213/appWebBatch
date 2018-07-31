@@ -1,4 +1,5 @@
-create table person
+--drop table if exists person;
+create table if not exists person
 (
 `personId`  int(11) NOT NULL AUTO_INCREMENT,
 `personName`  varchar(20),

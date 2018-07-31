@@ -22,7 +22,7 @@ import com.boot.step.Writer;
  *
  */
 @Configuration
-public class BatchConfig {
+public class JobBatchConfigOne {
 
     @Autowired
     public JobBuilderFactory jobBuilderFactory;
@@ -31,8 +31,8 @@ public class BatchConfig {
     public StepBuilderFactory stepBuilderFactory;
 
     @Bean
-    public Job processJob() {
-        return jobBuilderFactory.get("processJob")
+    public Job jobOne() {
+        return jobBuilderFactory.get("jobOne")
                 .incrementer(new RunIdIncrementer())
                 .listener(listener())
                 .flow(orderStep1()).end().build();
